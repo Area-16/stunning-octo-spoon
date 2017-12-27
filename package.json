@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@types/node": "8.5.2",
+    "ava": "0.24.0",
     "electron": "1.7.10",
     "electron-builder": "19.49.0",
     "eslint": "4.14.0",

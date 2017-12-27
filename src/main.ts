@@ -4,22 +4,22 @@ import * as url from 'url'
 
 let mainWindow: BrowserWindow
 
-function createWindow() {
+function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     height: 600,
-    width: 800,
+    width: 800
   })
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-      pathname: join(__dirname, '../index.html'),
-      protocol: 'file:',
-      slashes: true,
+    pathname: join(__dirname, '../index.html'),
+    protocol: 'file:',
+    slashes: true
   }))
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', () => {
@@ -51,6 +51,3 @@ app.on('activate', () => {
     createWindow()
   }
 })
-
-// In this file you can include the rest of your app"s specific main process
-// code. You can also put them in separate files and require them here.

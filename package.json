@@ -1,0 +1,42 @@
+{
+  "name": "stunning-octo-spoon",
+  "version": "1.0.0",
+  "description": "Cross-Platform Desktop 3D Application",
+  "main": "main.js",
+  "scripts": {
+    "test": "./node_modules/.bin/ava",
+    "build": "tsc",
+    "start": "./node_modules/.bin/electron ./app/main.js",
+    "dist": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougtq/stunning-octo-spoon.git"
+  },
+  "keywords": [
+    "babylonjs",
+    "electron",
+    "typescript"
+  ],
+  "author": "Douglas Alves <douglas.expalves@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dougtq/stunning-octo-spoon/issues"
+  },
+  "homepage": "https://github.com/dougtq/stunning-octo-spoon#readme",
+  "dependencies": {
+    "babylonjs": "3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "8.5.2",
+    "electron": "1.7.10",
+    "electron-builder": "19.49.0",
+    "eslint": "4.14.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "tslint": "5.8.0",
+    "tslint-config-airbnb": "5.4.2",
+    "typescript": "2.6.2",
+    "typescript-eslint-parser": "11.0.0"
+  }
+}

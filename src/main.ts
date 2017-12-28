@@ -1,6 +1,6 @@
 import { app, BrowserWindow } from 'electron'
 import { join } from 'path'
-import * as url from 'url'
+import { format } from 'url'
 
 let mainWindow: BrowserWindow
 
@@ -12,8 +12,8 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadURL(url.format({
-    pathname: join(__dirname, '../index.html'),
+  mainWindow.loadURL(format({
+    pathname: join(__dirname, '../views/index.html'),
     protocol: 'file:',
     slashes: true
   }))

@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "./node_modules/.bin/ava",
-    "build": "tsc",
+    "build": "./node_modules/.bin/rimraf ./app && tsc",
     "start": "./node_modules/.bin/electron ./app/main.js",
     "dist": "build"
   },

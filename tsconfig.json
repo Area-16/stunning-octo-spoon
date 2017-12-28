@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2015",
     "module": "commonjs",
     "outDir": "./app",
     "baseUrl": ".",
@@ -9,7 +9,7 @@
     },
     "inlineSourceMap": true,
     "pretty": true,
-    "lib": ["es2015", "es2017"],
+    "lib": ["es2015", "dom", "es2017"],
     "allowSyntheticDefaultImports": true
   },
   "include": [
